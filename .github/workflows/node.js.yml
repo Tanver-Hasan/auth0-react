@@ -27,6 +27,7 @@ jobs:
         heroku_email: "t.h.noman@outlook.com"
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - run: npm ci
     - run: npm run build 
   deploy: 
     needs: build
