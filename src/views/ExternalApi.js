@@ -6,8 +6,7 @@ import { getConfig } from "../config";
 import Loading from "../components/Loading";
 
 export const ExternalApiComponent = () => {
-  const apiOrigin= process.env.API_ORIGIN || "https://localhost:3001"
-  const { audience } = getConfig();
+  const { apiOrigin = "https://limitless-woodland-73988.herokuapp.com", audience } = getConfig();
 
   const [state, setState] = useState({
     showResult: false,
