@@ -16,3 +16,4 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "Auth0 react sample" #Must be unique in Heroku
           heroku_email: "t.h.noman@outlook.com"
+          appdir: "Sample-01"
