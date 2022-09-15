@@ -6,7 +6,8 @@ import { getConfig } from "../config";
 import Loading from "../components/Loading";
 
 export const ExternalApiComponent = () => {
-  const { apiOrigin = "http://localhost:3001", audience } = getConfig();
+  const apiOrigin= process.env.API_ORIGIN || "https://localhost:3001"
+  const { audience } = getConfig();
 
   const [state, setState] = useState({
     showResult: false,
