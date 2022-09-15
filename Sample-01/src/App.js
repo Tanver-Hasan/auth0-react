@@ -16,6 +16,7 @@ import "./App.css";
 
 // fontawesome
 import initFontAwesome from "./utils/initFontAwesome";
+import Invitations from "./components/Invitations";
 initFontAwesome();
 
 const App = () => {
@@ -37,6 +38,7 @@ const App = () => {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/profile" component={Profile} />
+            <Route path="/invitation" component={Invitations} />
             <Route path="/external-api" component={ExternalApi} />
           </Switch>
         </Container>
