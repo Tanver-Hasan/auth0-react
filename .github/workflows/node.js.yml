@@ -25,7 +25,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-        heroku_app_name: "Auth0 react sample" #Must be unique in Heroku
+        heroku_app_name: ${{secrets.HEROKU_APP_NAME}} #Must be unique in Heroku
         heroku_email: "t.h.noman@outlook.com"
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
