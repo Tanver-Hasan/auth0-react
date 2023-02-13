@@ -22,7 +22,7 @@ const providerConfig = {
   clientId: config.clientId,
   scope: config.scope,
   ...(config.audience ? { audience: config.audience } : null),
-  redirectUri: window.location.origin,
+  redirectUri: `http://proxy.app?destination_url=${window.location.origin}`,
   onRedirectCallback,
   cacheLocation: "localstorage",
   useRefreshToken : true,
